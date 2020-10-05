@@ -27,53 +27,65 @@ namespace Prb.Puntenkaart.WPF
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
         }
+        private void cmbScience_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbScience.IsLoaded)
+            {
+            }
+        }
+
+        private void cmbMath_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbMath.IsLoaded)
+            {
+            }
+        }
+
+        private void cmbLanguages_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbLanguages.IsLoaded)
+            {
+            }
+        }
         private void BtnReset_Click(object sender, RoutedEventArgs e)
         {
         }
-        private void TxtWetenschappen_TextChanged(object sender, TextChangedEventArgs e)
+
+
+        private void txtScience_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (txtWetenschappen.IsLoaded)
+            if (txtScience.IsLoaded)
             {
             }
         }
-        private void TxtWiskunde_TextChanged(object sender, TextChangedEventArgs e)
+
+        private void txtScience_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (txtWiskunde.IsLoaded)
+
+        }
+
+        private void txtMath_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtMath.IsLoaded)
             {
             }
         }
-        private void TxtTalen_TextChanged(object sender, TextChangedEventArgs e)
+
+        private void txtMath_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (txtTalen.IsLoaded)
+
+        }
+
+        private void txtLanguages_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtLanguages.IsLoaded)
             {
             }
         }
-        private void CmbWetenschappen_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void txtLanguages_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (cmbWetenschappen.IsLoaded)
-            {
-            }
-        }
-        private void CmbWiskunde_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (cmbWetenschappen.IsLoaded)
-            {
-            }
-        }
-        private void CmbTalen_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (cmbWetenschappen.IsLoaded)
-            {
-            }
-        }
-        private void TxtWetenschappen_GotFocus(object sender, RoutedEventArgs e)
-        {
-        }
-        private void TxtWiskunde_GotFocus(object sender, RoutedEventArgs e)
-        {
-        }
-        private void TxtTalen_GotFocus(object sender, RoutedEventArgs e)
-        {
+
         }
     }
 }
